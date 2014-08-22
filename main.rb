@@ -1,8 +1,6 @@
-require "pry"
-require "sinatra"
-require "sinatra/reloader"
-require "sinatra/activerecord"
-require "sqlite3"
+require "rubygems"
+require "bundler"
+Bundler.require
 
 set :server, 'webrick'
 
@@ -10,7 +8,7 @@ require_relative "./models/ingredient.rb"
 require_relative "./models/recipe.rb"
 require_relative "./models/review.rb"
 
-require "allrecipes"
+
 
 #r = Allrecipes.new
 
