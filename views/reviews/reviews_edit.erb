@@ -1,0 +1,7 @@
+<h1>Edit Review</h1>
+
+<form action="/reviews/<%= @review.id %>/update" method="post">
+  
+  <p>Text: <input type="text" name="text" values="<%= @review.text %>"></p>
+  
+</form>
