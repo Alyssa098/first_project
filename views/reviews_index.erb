@@ -1,0 +1,11 @@
+<h1>Reviews</h1>
+
+<a href="/recipes/<%= @recipe.id %>/reviews/new">Add a new review for recipe: <%= @recipe.name %></a></br></br>
+
+<% @reviews.each do |r| %>
+
+  <a><%= r.text %></a> 
+  <a href="/reviews/<%= @recipe.id %>/edit">Edit</a> 
+  <a href="/reviews/<%= @recipe.id %>/delete">Delete</a></br>
+
+<% end %>

@@ -1,0 +1,7 @@
+development:
+  database: recipes.db
+  adapter: sqlite3
+  
+test:
+  database: recipes_test.db
+  adapter: sqlite3
