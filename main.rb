@@ -1,5 +1,6 @@
 require "rubygems"
 require "bundler"
+
 Bundler.require
 
 set :server, 'webrick'
@@ -15,7 +16,7 @@ require_relative "./routes/reviews.rb"
 #r = Allrecipes.new
 
 #recipe = []
-#rec = r.all({page: 17, keys: ["name", "servings", "prep_time", "cook_time", "ingredients"]})
+#rec = r.all({page: 17, keys: ["name", "image", "servings", "prep_time", "cook_time", "ingredients", "directions"]})
 #rec.each do |r|
   #recipe << r
   #end
