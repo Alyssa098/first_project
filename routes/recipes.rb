@@ -30,5 +30,5 @@ end
 
 get "/recipes/:id" do
   @recipe = Recipe.find(params[:id])
-  erb :"recipes:recipes_show"
+  erb :"recipes/recipes_show"
 end
